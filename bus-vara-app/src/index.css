@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Galada&family=Manrope:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0B1210;
+  --color-surface: #121C19;
+  --color-amber: #E8A33D;
+  --color-amber-soft: #F1C77A;
+  --color-teal: #2F6F62;
+  --color-teal-deep: #1E4A41;
+  --color-paper: #F3EFE6;
+  --color-sage: #9CA79E;
+
+  --font-sans: "Manrope", "Hind Siliguri", sans-serif;
+  --font-display: "Fraunces", serif;
+  --font-bangla: "Hind Siliguri", sans-serif;
+  --font-banglaDisplay: "Galada", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-ink text-paper font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-amber/30 text-paper;
+  }
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-ink: #F3EFE6;      /* light mode default */
+  --color-paper: #0B1210;
+}
+
+.dark {
+  --color-ink: #0B1210;      /* dark mode override */
+  --color-paper: #F3EFE6;
+}

@@ -1,8 +1,13 @@
+import Header from "./component/Header";
+import Footer from "./component/Footer";
+import FareCalculator from "./component/FareCalculator";
 
 const App = () => {
   return (
     <div>
-      Hello React 
+      <Header />
+      <FareCalculator />
+      <Footer />
     </div>
   );
 };
