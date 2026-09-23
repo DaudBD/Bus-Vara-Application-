@@ -1,0 +1,23 @@
+{
+  "files.associations": {
+    "*.jsx": "javascriptreact"
+  },
+  "editor.snippetSuggestions": "top",
+  "editor.tabCompletion": "on",
+  "[javascript]": {
+    "editor.suggest.showSnippets": true,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    }
+  },
+  "[javascriptreact]": {
+    "editor.suggest.showSnippets": true,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    }
+  }
+}
